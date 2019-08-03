@@ -1,7 +1,7 @@
-<form action="new" method="get" accept-charset="UTF-8">
-  Username: <input type="string" name="username"><br>
-  Email: <input type="string" name="email"><br>
-  Password: <input type="string" name="password"><br>
+<form action="/users" method="post" accept-charset="UTF-8">
+  Username: <input type="string" name="user[username]"><br>
+  Email: <input type="string" name="user[email]"><br>
+  Password: <input type="string" name="user[password]"><br>
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <input type="submit" value="Submit">
 </form>
