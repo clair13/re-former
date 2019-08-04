@@ -1,0 +1,9 @@
+<%= form_for @user, method: :patch do |f| %>
+  <%= f.label :username, "Put your username:" %>
+  <%= f.text_field :username, placeholder: "Example User" %>
+  <%= f.label :email, "Put your email:" %>
+  <%= f.text_field :email, placeholder: "example@example.com" %>
+  <%= f.label :password, "Put your password:" %>
+  <%= f.password_field :password, placeholder: "Enter password" %>
+  <%= f.submit "Submit" %>
+<% end %>
